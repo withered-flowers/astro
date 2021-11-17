@@ -23,7 +23,7 @@ const IMPORT_STATEMENTS: Record<string, string> = {
 const PREVENT_UNUSED_IMPORTS = ';;(React,Fragment,h);';
 
 // https://github.com/vitejs/vite/discussions/5109#discussioncomment-1450726
-function isSSR(options: undefined | boolean | { ssr: boolean }): boolean {
+function isSSR(options: undefined | boolean | { ssr?: boolean }): boolean {
   if (options === undefined) {
     return false;
   }
